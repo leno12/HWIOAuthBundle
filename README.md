@@ -27,6 +27,7 @@ This bundle contains support for 58 different providers:
 * 37signals,
 * Amazon,
 * Asana,
+* Apple
 * Auth0,
 * Azure,
 * Bitbucket,
