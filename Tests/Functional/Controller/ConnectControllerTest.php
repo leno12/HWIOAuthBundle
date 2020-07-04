@@ -64,6 +64,7 @@ final class ConnectControllerTest extends WebTestCase
 
         $key = 1;
         $exception = new AccountNotLinkedException();
+
         $exception->setResourceOwnerName('google');
         $exception->setToken(new CustomOAuthToken());
 

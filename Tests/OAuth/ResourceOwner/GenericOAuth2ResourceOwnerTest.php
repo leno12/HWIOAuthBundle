@@ -99,7 +99,6 @@ json;
 
         /** @var $userResponse \HWI\Bundle\OAuthBundle\OAuth\Response\AbstractUserResponse */
         $userResponse = $this->resourceOwner->getUserInformation($this->tokenData);
-
         $this->assertEquals('1', $userResponse->getUsername());
         $this->assertEquals('bar', $userResponse->getNickname());
         $this->assertEquals('token', $userResponse->getAccessToken());

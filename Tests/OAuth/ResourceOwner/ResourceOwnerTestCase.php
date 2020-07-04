@@ -48,7 +48,6 @@ abstract class ResourceOwnerTestCase extends TestCase
         } else {
             $mock = $this->httpClient->expects($this->once());
         }
-
         $mock->method('sendRequest')
             ->willReturnCallback(function (RequestInterface $request) use ($response, $contentType) {
                 $request = $request->withAddedHeader('Content-Type', $contentType ?: $this->httpResponseContentType);
